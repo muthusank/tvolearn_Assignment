@@ -1,0 +1,21 @@
+{
+  "name": "tvolear_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:run_spec": "npx cypress run --spec 'cypress/e2e/TestExecution_Primary/Main_Testexecution.cy.js'",
+    "cypress:run:all": "npm run cypress:run:chrome && npm run cypress:run:firefox",
+    "cy:run_browser": "--headed --browser chrome & npx cypress run --headed --browser firefox"
+  },
+  "author": "Muthu Sankari",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.13.0"
+  },
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress-mochawesome-reporter": "^3.5.0"
+  }
+}
